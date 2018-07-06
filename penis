@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]
+	then
+	NUM=$(((RANDOM%10)+1))
+else
+	NUM="$1"
+fi
+
+GLANS="      _ _     
+     / | \    
+    (__*__)  
+" 
+
+SHAFT="    |     |   
+"
+
+STRING="$GLANS"
+
+BALLS="   ---._.---  
+  /         \ 
+  |    _    | 
+  \    |    / 
+   \__/ \__/  "
+
+for i in `seq 1 $NUM`;
+do
+	STRING="$STRING$SHAFT"
+done
+STRING="$STRING$BALLS"
+echo "$STRING";
+exit 1
