@@ -1,13 +1,39 @@
 # Ascii PENIS
-## Usage
-Clone this repository into your local machine.
-Go inside the folder ascii-penis.
-There are three ways to use the executable:
 
-* type "./penis" and press enter
-* type "./penis \<number\>", where \<number\> is a number between 0 and 20
-* type "./penis \<number1\> \<number2\>", where \<number1\> is a number between 0 and 20, and <number2> is 1 or 2
+Funny home made project to learn about bash code
 
-The first one prints an ascii-penis of variable length and variable width, with length between 0 and 20 (from a micropenis to a very large penis), the second prints a penis of the specified length and variable width, and the third one prints a penis of specific width (\<number1\>) and specific height (\<number2\>).
+## __Set up__
+- Choose a folder project in your system and switch in `cd [folder path]`
+- Clone the repo in your folder `git clone https://github.com/useless-programmer/ascii-penis.git`
+
+## __Usage__
+There are three ways to use the script:
+
+print a random ascii penis
+```bash
+./penis
+```
+
+
+print an ascii penis with a choosen height:
+```bash
+./penis arg1
+```
+`arg1` is an integer between 0 and 20
+
+
+print an ascii penis with a choosen height and a choosen width:
+```bash
+./penis arg1 arg2
+```
+`arg1` is an integer between 0 and 20
+`arg2` is an integer between 1 and 3
+
+
+
+You will love the ascii-penis generator, from a micropenis to a very large penis!
 Actually we have THREE DIFFERENT shapes for the penis: discover them!
-Enjoy!
+
+
+
+Enjoy with your friends or family!
