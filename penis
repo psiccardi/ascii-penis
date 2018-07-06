@@ -1,12 +1,33 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]
+if [ -z "$1" ]
 	then
-	NUM=$(((RANDOM%10)+1))
+	NUM=$(((RANDOM%21)))
 else
 	NUM="$1"
 fi
 
+if [ -z "$2" ]
+	then
+	WIDTH=$(((RANDOM%2)+1))
+else
+	WIDTH="$2"
+fi
+
+case "$WIDTH" in
+1)
+GLANS="     _
+    /|\ 
+"
+
+SHAFT="    | |
+"
+
+BALLS="   _| |_ 
+  (_) (_)
+"
+;;
+2)
 GLANS="      _ _     
      / | \    
     (__*__)  
@@ -15,14 +36,15 @@ GLANS="      _ _
 SHAFT="    |     |   
 "
 
-STRING="$GLANS"
-
 BALLS="   ---._.---  
   /         \ 
   |    _    | 
   \    |    / 
    \__/ \__/  "
+;;
+esac
 
+STRING="$GLANS"
 for i in `seq 1 $NUM`;
 do
 	STRING="$STRING$SHAFT"
