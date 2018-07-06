@@ -9,7 +9,7 @@ fi
 
 if [ -z "$2" ]
 	then
-	WIDTH=$(((RANDOM%2)+1))
+	WIDTH=$(((RANDOM%3)+1))
 else
 	WIDTH="$2"
 fi
@@ -42,6 +42,23 @@ BALLS="   ---._.---
   \    |    / 
    \__/ \__/  "
 ;;
+3)
+GLANS="              __ __
+           .-\`  |  \`-.
+          /     |     \ 
+         (_____________)
+"
+SHAFT="          |           |
+"
+BALLS="       .-\` \`-._____.-\` \`-. 
+      /                   \  
+     /                     \  
+     |                     |  
+     \                     /  
+      \                   /  
+       \`-___--°°°°°--___-\`  
+"
+;;
 esac
 
 STRING="$GLANS"
@@ -50,5 +67,8 @@ do
 	STRING="$STRING$SHAFT"
 done
 STRING="$STRING$BALLS"
-echo "$STRING";
+echo "$STRING
+";
+RESULT="$((($NUM+1)*($WIDTH*$WIDTH)))"
+echo "YOUR PENIS SCORE IS: $RESULT";
 exit 1
